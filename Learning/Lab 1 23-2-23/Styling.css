@@ -1,0 +1,32 @@
+ul {
+  color: rgb(0, 0, 0);
+}
+html {
+  background-color: rgb(249, 231, 231);
+}
+#pics {
+  padding-left: 150px;
+}
+#namemain {
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 500px;
+}
+#namesec {
+  font-weight: lighter;
+}
+#leftcolumn {
+  width: 50%;
+  padding-left: 250px;
+}
+#rightcolumn {
+  width: 50%;
+  padding-right: 200px;
+}
+#Contacts {
+  padding-left: 40px;
+  font-size: small;
+  font-family: "Times New Roman", Times, serif;
+}
