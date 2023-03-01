@@ -30,3 +30,23 @@ html {
   font-size: small;
   font-family: "Times New Roman", Times, serif;
 }
+p:hover {
+  text-decoration: underline;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotfilled {
+  height: 15px;
+  width: 15px;
+  background-color: #868585;
+  border-radius: 50%;
+  display: inline-block;
+}
+#bars {
+  background-color: rgb(0, 0, 0);
+}
