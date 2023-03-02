@@ -1,0 +1,79 @@
+#Top {
+  background-color: rgb(78, 20, 140);
+  padding: 2px;
+  width: 100%;
+}
+#fedexlogo {
+  width: 60px;
+  float: left;
+}
+#search {
+  width: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+#Menubar {
+  list-style: none;
+  margin-top: 18px;
+}
+#Menubar > li {
+  display: inline;
+  padding: 15px;
+  color: white;
+  border-radius: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+#dropdown {
+  display: none;
+}
+#Menubar > li:hover {
+  text-decoration: underline;
+}
+#hasdropdown {
+  position: relative;
+}
+#Menubar > li:hover #dropdown {
+  display: block;
+  position: absolute;
+  top: 32px;
+  left: 45px;
+  background-color: rgb(78, 20, 140);
+  border-radius: 20px;
+  padding: 10px;
+  list-style: none;
+  text-align: right;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+#Content {
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+}
+#Footer {
+  text-align: justify;
+}
+#BottomPanel {
+  background-color: rgb(78, 20, 140);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#BottomPanel > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#BottomPanel > ul > li {
+  display: inline;
+  padding: 15px;
+  color: white;
+  border-radius: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+#BottomPanel > ul > li:hover {
+  text-decoration: underline;
+}
