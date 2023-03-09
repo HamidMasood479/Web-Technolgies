@@ -1,1 +1,2 @@
 1 event binding invoke certain function
+2 can change inner contents of each element.
