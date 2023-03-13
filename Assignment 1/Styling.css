@@ -50,7 +50,23 @@ p:hover {
   border-radius: 50%;
   display: inline-block;
 }
-#bars {
+#bars1 {
   background-color: rgb(0, 0, 0);
   padding: 1px;
+  margin-left: 92px;
+}
+#bars2 {
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+  margin-left: 86px;
+}
+#bars3 {
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+  margin-left: 82px;
+}
+#bars4 {
+  background-color: rgb(0, 0, 0);
+  padding: 1px;
+  margin-left: 30px;
 }
