@@ -32,13 +32,13 @@
 
 #titlemp h1 {
   color: #e7eaee;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   text-decoration: underline;
 }
 #titleup h1 {
   color: #e7eaee;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -69,6 +69,29 @@
   position: relative;
   animation-name: shakeIt;
   animation-duration: 0.5s;
+}
+#newspanel {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow-x: hidden;
+  height: 600px;
+  width: 500px;
+  overflow-y: auto;
+  margin-top: 200px;
+  margin-left: 100px;
+  color: white;
+}
+#newspanel h1 {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#newspanel p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 .buttonerror {
   position: relative;
