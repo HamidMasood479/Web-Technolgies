@@ -1,0 +1,74 @@
+.navbar div ul li a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: yellow;
+}
+.firstimage {
+  width: 120%;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-over-img {
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+  font-size: 4em;
+  margin-top: -425px;
+  text-align: center;
+  margin-left: 250px;
+}
+.seconddiv {
+  background-color: #f6f6f6;
+  margin-top: 350px;
+  justify-content: center;
+  align-items: center;
+}
+.secondimg {
+  padding: 50px;
+  width: 60%;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 375px;
+}
+.list {
+  list-style: none;
+}
+.carouselheading {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: yellow;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+.carouselsize {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+.thirdpart {
+  background-color: #f6f6f6;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 175px;
+}
+.bottom {
+  background-color: #454543;
+}
+.bottom ul {
+  list-style: none;
+  padding: 25px;
+}
+.bottom ul li {
+  color: white;
+  margin-left: 150px;
+}
+.bottomh3 {
+  color: white;
+  margin-top: 150px;
+}
