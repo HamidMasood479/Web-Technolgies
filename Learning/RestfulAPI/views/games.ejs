@@ -1,0 +1,9 @@
+<h1>Games</h1>
+<% console.log(games) %> <% for( let index = 0; index < games.length; index++ )
+{ %>
+<div class="product">
+  <h2 class="product-title"><%= games[index].title %></h2>
+  <a href="/games/<%= games[index]._id %>">More Info</a>
+  <a href="">Add to cart</a>
+</div>
+<% } %>

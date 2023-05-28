@@ -1,0 +1,7 @@
+<h1>Most Played</h1>
+<% for (let index = 0; index < games.length; index++) { %> <% if
+(games[index].mostplayed) { %>
+<span class="product">
+  <a href="/games/<%= games[index]._id %>"><img src="<%= games[index].img %>" style="width: 350px;height: 250px;"></img></a>
+</span>
+<% } %> <% } %>

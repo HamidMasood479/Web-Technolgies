@@ -5,6 +5,9 @@ const gamesSchema = mongoose.Schema({
   category: String,
   price: Number,
   year: Number,
+  img: String,
+  mostplayed: Boolean,
+  description: String,
 });
 const Game = mongoose.model("Game", gamesSchema);
 module.exports = Game;
