@@ -37,6 +37,19 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<% for (let index = 0; index < events.length; index++) { %> 
+  <div class="card" style="width: 18rem;">
+            <img src="<%= events[index].img %>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= events[index].title %></h5>
+              <h5 class="card-text">Venue:<%= events[index].venue %></h5>
+              <h5 class="card-text">Duration:<%= events[index].duration %></h5>
+              <a href="Events.html" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+<% } %>
+
 <style>
   .carousel-image {
     width: 100%;
