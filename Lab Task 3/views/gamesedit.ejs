@@ -1,0 +1,95 @@
+<form action="/games/gameedit/<%= games._id %>" method="post">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="title"
+          value="<%= games.title %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="publisher" class="form-label">Publisher</label>
+        <input
+          type="text"
+          class="form-control"
+          id="publisher"
+          name="publisher"
+          value="<%= games.publisher %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <input
+          type="text"
+          class="form-control"
+          id="category"
+          name="category"
+          value="<%= games.category %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input
+          type="text"
+          class="form-control"
+          id="price"
+          name="price"
+          value="<%= games.price %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="year" class="form-label">Year</label>
+        <input
+          type="text"
+          class="form-control"
+          id="year"
+          name="year"
+          value="<%= games.year %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="img" class="form-label">Image(URL)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="img"
+          name="img"
+          value="<%= games.img %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="mostplayed" class="form-label">Most Played</label>
+        <div class="form-check">
+          <input type="hidden" name="mostplayed" value="false" />
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="mostplayed"
+            name="mostplayed"
+            value="true"
+          />
+          <label class="form-check-label" for="mostplayed">Most Played</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          name="description"
+          value="<%= games.description %>"
+        />
+      </div>
+      <div class="mb-s">
+        <input type="submit" class="btn btn-secondary" />
+      </div>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</form>

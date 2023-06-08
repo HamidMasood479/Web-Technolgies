@@ -1,0 +1,17 @@
+<h1>Games</h1>
+<% for( let index = 0; index < games.length; index++ ) { %>
+<div class="product">
+  <img
+    src="<%= games[index].img %>"
+    alt="<%= games[index].title %>"
+    style="width: 250px"
+  />
+  <h2 class="product-title"><%= games[index].title %></h2>
+  <h3 class="product-price">Publisher:<%= games[index].publisher %></h3>
+  <h4 class="product-price">Category:<%= games[index].category %></h4>
+  <h4 class="product-price">Year:<%= games[index].year %></h4>
+  <h4 class="product-price">Price:$<%= games[index].price %></h4>
+  <a href="/games/<%= games[index]._id %>">More Info</a>
+  <a href="">Add to cart</a>
+</div>
+<% } %>

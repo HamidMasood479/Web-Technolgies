@@ -1,0 +1,13 @@
+<h1>News</h1>
+<% for( let index = 0; index < news.length; index++ ) { %>
+<div class="product">
+  <img
+    src="<%= news[index].img %>"
+    alt="<%= news[index].title %>"
+    style="width: 450px"
+  />
+  <h2 class="product-title"><%= news[index].title %></h2>
+  <h2><%= news[index].description %></h2>
+  <h2><%= news[index].date %></h2>
+</div>
+<% } %>

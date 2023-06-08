@@ -1,0 +1,14 @@
+<h1>Events</h1>
+<% for( let index = 0; index < events.length; index++ ) { %>
+<div class="product">
+  <img
+    src="<%= events[index].img %>"
+    alt="<%= events[index].title %>"
+    style="width: 150px"
+  />
+  <h2 class="product-title"><%= events[index].title %></h2>
+  <h2><%= events[index].description %></h2>
+  <h2><%= events[index].venue %></h2>
+  <h2><%= events[index].duration %></h2>
+</div>
+<% } %>
