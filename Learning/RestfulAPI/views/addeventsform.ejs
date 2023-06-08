@@ -1,0 +1,58 @@
+<ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/adminhome">Home</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/games/addgamesform">Add Games</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="">Add Events</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/news/addnewsform">Add News</a>
+    </li>
+  </ul>
+<h1>Events Form</h1>
+<form action="/events/addeventsform" method="post">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" />
+      </div>
+      <div class="mb-3">
+        <label for="venue" class="form-label">Venue</label>
+        <input
+          type="text"
+          class="form-control"
+          id="venue"
+          name="venue"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="duration" class="form-label">Duration</label>
+        <input type="text" class="form-control" id="duration" name="duration" />
+      </div>
+      <div class="mb-3">
+        <label for="img" class="form-label">Image(URL)</label>
+        <input type="text" class="form-control" id="img" name="img" />
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          name="description"
+        />
+      </div>
+      <div class="mb-s">
+        <input type="submit" class="btn btn-secondary" />
+      </div>
+      </div>
+      
+    </div>
+    <div class="col-2"></div>
+  </div>
+</form>
