@@ -39,6 +39,24 @@ app.get("/", async (req, res) => {
 app.get("/adminhome", (req, res) => {
   res.render("adminhome");
 });
+app.get("/cart", (req, res) => {
+  let cart = req.cookies.cart ? req.cookies.cart : [];
+  let games = Game.find({ _id: { $in: cart } });
+  res.render("cart", { games });
+});
+app.get("/cart/remove/:id", async (req, res) => {
+  let cart = req.cookies.cart ? req.cookies.cart : [];
+  let index = cart.findIndex((c) => c == req.params.id);
+  cart.splice(index, 1);
+  res.cookie("cart", cart);
+  return res.redirect("back");
+});
+app.get("/cart/:id", async (req, res) => {
+  let cart = req.cookies.cart ? req.cookies.cart : [];
+  cart.push(req.params.id);
+  res.cookie("cart", cart);
+  res.render("cart");
+});
 
 let connectionString1 =
   "mongodb+srv://admin:admin@gamecluster1.jli3woh.mongodb.net/Games";

@@ -1,0 +1,16 @@
+<h1>News</h1>
+<% for( let index = 0; index < news.length; index++ ) { %>
+<div class="product">
+  <img
+    src="<%= news[index].img %>"
+    alt="<%= news[index].title %>"
+    style="width: 450px"
+  />
+  <h2 class="product-title"><%= news[index].title %></h2>
+  <h2><%= news[index].description %></h2>
+  <h2><%= news[index].date %></h2>
+  <a href="/news/<%= news[index]._id %>">More Info</a>
+  <a href="/news/delete/<%= news[index]._id %>">Delete</a>
+  <a href="/news/newsedit/<%=news[index]._id %>">Edit</a>
+</div>
+<% } %>

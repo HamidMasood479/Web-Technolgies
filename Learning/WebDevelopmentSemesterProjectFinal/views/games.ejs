@@ -12,6 +12,6 @@
   <h4 class="product-price">Year:<%= games[index].year %></h4>
   <h4 class="product-price">Price:$<%= games[index].price %></h4>
   <a href="/games/<%= games[index]._id %>">More Info</a>
-  <a href="">Add to cart</a>
+  <a href="/cart/<%= games[index]._id %>">Add to cart</a>
 </div>
 <% } %>
