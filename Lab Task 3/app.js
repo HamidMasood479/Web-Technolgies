@@ -39,23 +39,28 @@ app.get("/", async (req, res) => {
 app.get("/adminhome", (req, res) => {
   res.render("adminhome");
 });
-app.get("/cart", (req, res) => {
-  let cart = req.cookies.cart ? req.cookies.cart : [];
-  let games = Game.find({ _id: { $in: cart } });
-  res.render("cart", { games });
-});
 app.get("/cart/remove/:id", async (req, res) => {
+  console.log("deleting");
   let cart = req.cookies.cart ? req.cookies.cart : [];
   let index = cart.findIndex((c) => c == req.params.id);
   cart.splice(index, 1);
-  res.cookie("cart", cart);
-  return res.redirect("back");
+  // res.cookie("cart", cart);
+  return res.redirect("/cart");
 });
+app.get("/cart", async (req, res) => {
+  let cart = req.cookies.cart ? req.cookies.cart : [];
+  let games = await Game.find({ _id: { $in: cart } });
+  // res.cookie("cart", cart
+  res.render("cart", { games });
+});
+
 app.get("/cart/:id", async (req, res) => {
+  console.log("adding");
   let cart = req.cookies.cart ? req.cookies.cart : [];
   cart.push(req.params.id);
-  res.cookie("cart", cart);
-  res.render("cart");
+  let games = await Game.find({ _id: { $in: cart } });
+  // res.cookie("cart", cart
+  res.render("cart", { games });
 });
 
 let connectionString1 =

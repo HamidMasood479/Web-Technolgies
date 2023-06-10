@@ -1,10 +1,10 @@
 <h1>Cart</h1>
+
+<%= console.log(games[0],"giving id" )%>
 <ul>
   <% for( let index = 0; index < games.length; index++ ) { %>
   <li><%= games[index].title %></li>
   <li><%= games[index].price %></li>
-  <a class="btn btn-danger" href="/cart/remove/<%=games[index]._id  %>"
-    >Remove</a
-  >
+  <a class="btn btn-danger" href="/cart/remove/<%=games[index]._id%>">Remove</a>
   <% } %>
 </ul>
