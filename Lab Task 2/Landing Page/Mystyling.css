@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  background-color: #ffffff00;
+  border-radius: 25px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 400px;
+  margin-top: 220px;
+  margin-left: 300px;
+}
+
+#signin {
+  text-align: left;
+  color: white;
+  outline: 1px;
+  outline-color: white;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  align-self: flex-start;
+  padding: 2px;
+}
+.text {
+  text-align: center;
+  color: white;
+  text-decoration-line: underline;
+  padding: 1px;
+}
+
+#titlemp h1 {
+  color: #e7eaee;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#titleup h1 {
+  color: #e7eaee;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#mostplayed {
+  list-style: none;
+}
+#mostplayed li {
+  display: inline;
+  padding: 10px;
+}
+#mostplayed li img {
+  width: 250px;
+  height: 250px;
+}
+.username {
+  text-align: left;
+  background-color: #e7eaee;
+  border-radius: 10px;
+  border: 2px;
+  border-color: white;
+  margin: 5px;
+}
+.success {
+  border: 2px solid green;
+}
+.error {
+  border: 2px solid red;
+  position: relative;
+  animation-name: shakeIt;
+  animation-duration: 0.5s;
+}
+#newspanel {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow-x: hidden;
+  height: 600px;
+  width: 500px;
+  overflow-y: auto;
+  margin-top: 200px;
+  margin-left: 100px;
+  color: white;
+}
+#newspanel h1 {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#newspanel p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.buttonerror {
+  position: relative;
+  animation-name: shakeIt;
+  animation-duration: 0.5s;
+}
+@keyframes shakeIt {
+  0% {
+    right: 15px;
+  }
+  50% {
+    right: -15px;
+  }
+  100% {
+    right: 0px;
+  }
+}
